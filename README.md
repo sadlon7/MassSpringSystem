@@ -6,11 +6,22 @@ Projekt na predmet Matematické modelovanie a počítačová animácia fyzikáln
 
 Popis projektu (bla bla bla)
 
-### Poziadavky
+## Poziadavky
 
 Programovacie jazyky a kniznice pouzite v projekte:
 
+
+* Jazyk: Python 3.6.3
+* Kniznice: tkinter
+
+
+## Autori
+
 ```
-Jazyk: Python 3.6.3
-Kniznice: tkinter
+* Martin Sadlon | 1mAIN (m.sadlon93@gmail.com)
+
+```
+```
+* Marek Stachera | 2mAIN (stachera1@uniba.com)
+
 ```
