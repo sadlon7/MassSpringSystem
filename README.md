@@ -2,6 +2,11 @@
 
 Projekt na predmet Matematické modelovanie a počítačová animácia fyzikálnych procesov
 
+## Autori
+
+* Martin Sadlon | 1mAIN (m.sadlon93@gmail.com)
+* Marek Stachera | 2mAIN (stachera1@uniba.com)
+
 ## Uvod
 
 Popis projektu (bla bla bla)
@@ -13,15 +18,3 @@ Programovacie jazyky a kniznice pouzite v projekte:
 
 * Jazyk: Python 3.6.3
 * Kniznice: tkinter
-
-
-## Autori
-
-```
-* Martin Sadlon | 1mAIN (m.sadlon93@gmail.com)
-
-```
-```
-* Marek Stachera | 2mAIN (stachera1@uniba.com)
-
-```
