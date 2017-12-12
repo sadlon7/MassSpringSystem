@@ -1,4 +1,4 @@
-# C14: Mass-Spring system (infinity stiff springs)
+# Mass-Spring system
 
 Projekt na predmet Matematické modelovanie a počítačová animácia fyzikálnych procesov
 
