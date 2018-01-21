@@ -1,27 +1,45 @@
 import math
+import point
 
 class Vector():
-    
-    def __init__(self, direction, length):
-        """ 0 -> UP , PI/2 -> RIGHT , PI -> DOWN , PI*3/2 -> LEFT """
-        self.dir = direction
-        self.len = length
-        
+    def __init__(self, x, y):
+        try:
+            self.x = y.x - x.x
+            self.y = y.y - x.y
+        except:
+            self.x = x
+            self.y = y
+
     def __add__(self, vector):
-        x  = math.sin(self.dir) * self.len + math.sin(vector.dir) * vector.len
-        y  = math.cos(self.dir) * self.len + math.cos(vector.dir) * vector.len
-        direction  = 0.5 * math.pi - math.atan2(y, x)
-        length = math.hypot(x, y)
-        return Vector(direction, length)
+        return Vector(self.x + vector.x, self.y + vector.y)
+
 
     def __mul__(self,scalar):
-        return Vector(self.dir, self.len * scalar)
+        return Vector(self.x * scalar, self.y * scalar)
 
     def __truediv__(self,scalar):
-        return Vector(self.dir, self.len / scalar)
+        return Vector(self.x / scalar, self.y / scalar)
         
     def add(self, vector):
-        x  = math.sin(self.dir) * self.len + math.sin(vector.dir) * vector.len
-        y  = math.cos(self.dir) * self.len + math.cos(vector.dir) * vector.len
-        self.dir  = 0.5 * math.pi - math.atan2(y, x)
-        self.len = math.hypot(x, y)
+        self.x += vector.x
+        self.y += vector.y
+
+    def length(self):
+        return math.hypot(self.x, self.y)
+
+
+    def multiply(self, vector):
+        return Vector(self.x * vector.x, self.y * vector.y)
+
+    def dotProduct(self, v):
+        r = 0.0
+        r += self.x * v.x
+        r += self.y * v.y
+        return r
+
+
+
+
+
+    
+        
