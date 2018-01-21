@@ -36,7 +36,7 @@ class Particle:
         if round(self.position.y, 1) < 489:
             self.velocity.add(gravity * self.mass)
         else:
-            if self.velocity.y  < 0.2 * self.mass:
+            if abs(self.velocity.y)  < 0.2:
                 self.velocity.y = 0
 
     def draw(self, canvas):
